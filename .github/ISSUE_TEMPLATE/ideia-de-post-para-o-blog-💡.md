@@ -4,7 +4,7 @@ about: Tem uma ideia incrível para o Blog da Cumbuca Dev, mas não sabe como de
   A comunidade pode ajudar a transformar isso em um post!
 title: "[TíTULO DO POST/IDEIA/TEMA]"
 labels: "ideia de post\U0001F4A1"
-assignees: antoniamaia
+assignees: ''
 
 ---
 
