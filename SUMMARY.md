@@ -7,5 +7,7 @@
 
 * [Setembro 2024](posts/setembro-2024/README.md)
   * ["Olá, Mundo!"](posts/setembro-2024/ola-mundo.md)
-* [💜 \[Mês\] \[ano\]](posts/mes-ano/README.md)
-  * [Novo Blog Post](posts/mes-ano/novo-blog-post.md)
+* [💜 Março 2025](posts/marco-2025/README.md)
+  * [Novo Blog Post](posts/marco-2025/novo-blog-post.md)
+* [💜 Copy of \[Mês\] \[ano\]](posts/copy-of-mes-ano/README.md)
+  * [Novo Blog Post](posts/copy-of-mes-ano/novo-blog-post.md)
