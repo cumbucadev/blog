@@ -10,6 +10,6 @@
 * [💜 Março 2025](posts/marco-2025/README.md)
   * [Novo Blog Post](posts/marco-2025/novo-blog-post.md)
 * [💜 Julho 2025](posts/julho-2025/README.md)
-  * [Parceria: Cubuca Dev + Design Líquido](posts/julho-2025/parceria-cubuca-dev-+-design-liquido.md)
+  * [Hackeando o Inglês: Programando com a Língua que Você Pensa](posts/julho-2025/hackeando-o-ingles-programando-com-a-lingua-que-voce-pensa.md)
 * [💜 Copy of Copy of \[Mês\] \[ano\]](posts/copy-of-copy-of-mes-ano/README.md)
   * [Novo Blog Post](posts/copy-of-copy-of-mes-ano/novo-blog-post.md)

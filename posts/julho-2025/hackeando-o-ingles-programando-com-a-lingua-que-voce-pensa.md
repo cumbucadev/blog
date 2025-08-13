@@ -1,30 +1,22 @@
----
-description: Um ambiente tecnológico para aprender e empreender totalmente em Português!
----
+# Hackeando o Inglês: Programando com a Língua que Você Pensa
 
-# Parceria: Cubuca Dev + Design Líquido
+Ingressar num mercado de tecnologia cujo idioma utilizado nas linguagens de programação é o inglês costuma ser bastante desafiador para quem já não tem conhecimentos da língua. É um cenário que força pessoas iniciantes a aprenderem duas habilidades concomitantemente: a lógica de programação e um novo idioma. E, vamos combinar, elas não são tão triviais de se aprender...&#x20;
 
+A barreira idiomática é uma das causas de desistência de muitas pessoas iniciantes na programação. Imagino que você mesmo tenha tido contato com alguém que comentou sobre a dificuldade com o inglês enquanto tentava aprender a programar, não?&#x20;
 
-
-Desde o início da Cumbuca, buscamos proporcionar um ambiente de aprendizado acolhedor e ampliar nosso alcance para contemplar mais e mais pessoas que fazem parte de grupos minoritários e que estão entrando na área de TI. Promovemos ações educativas que perpassam por participação e organização de eventos, mentorias, material educacional e incentivar a contribuição em projetos de código aberto para geração de experiência.
-
-A partir desde ano de 2025, visando expandir este alcance e meios de continuar proporcionando capacitapação e inclusão de diversidade na área, conquistamos uma parceria muito importante com uma organização que dialoga diretamente com nossos propósitos: a Design Líquido.&#x20;
+Buscando ultrapassar essa barreira, a Cumbuca Dev e a Design Líquido se uniram para oferecer ferramentas e conteúdo de capacitação técnica que são acessíveis a falantes da língua portuguesa e podem ser usadas para fins educacionais ou comerciais e, além disso, são Open Source.&#x20;
 
 
 
 <figure><img src="../../.gitbook/assets/design-liquido-azul.png" alt=""><figcaption></figcaption></figure>
 
-
-
-Assim como a Cumbuca, a Design Líquido também pretende atingir iniciantes na área de programação e o principal meio que vem buscando para tal, foi o desenvolvimento de um ecossistema todo em português! Ou seja, com eles, nós vamos encontrar uma série de ferramentas em língua portuguesa: linguagem de programação, de marcação, de consulta, de estilo, extensão para VS Code e um framework para desenvolvimento web.&#x20;
+Para facilitar a entrada de pessoas iniciantes da área de programação a Design Líquido vem desenvolvendo um ecossistema todo em português! Ou seja, com eles, nós vamos encontrar uma série de ferramentas em língua portuguesa: linguagem de programação, de marcação, de consulta, de estilo, extensão para VS Code e um framework para desenvolvimento web.&#x20;
 
 Com toda essa indumentária, é possível, até mesmo, desenvolver projetos em âmbito comercial! Permitindo mais acessibilidade e autonomia à comunidade lusófona, uma vez que torna o conhecimento da língua inglesa dispensável para aprendizado e geração de emprego.&#x20;
 
 ### Mas quais são a vantagens de se programar em português, afinal?&#x20;
 
-Para responder essa pergunta, a própria Design Líquido que assim podemos ter mais:
-
-* **Acessibilidade e Compreensão:** Programar em sua língua materna, como o português, torna os conceitos de programação mais acessíveis e fáceis de entender, especialmente para iniciantes, reduzindo a barreira de entrada para novos programadores;
+* **Acessibilidade e Compreensão:** Programar em sua língua materna, como o português, torna os conceitos de programação mais acessíveis e fáceis de entender, especialmente para iniciantes, reduzindo a barreira de entrada para novas pessoas programadoras;
 * **Facilita o Aprendizado:** A programação em português permite que os aprendizes concentrem-se nos conceitos de programação em vez de lidar com a barreira de um segundo idioma. Isso pode acelerar o processo de aprendizado, especialmente para pessoas que não têm fluência em inglês (ou 95% da população que possui o português como língua materna);
 * **Melhor Comunicação e Documentação:** Programar em seu idioma nativo leva a uma comunicação mais clara e eficaz com colegas e clientes locais. Além disso, a documentação em português é mais fácil de compreender e seguir;
 * **Contribuição para a Identidade Cultural:** Linguagens de programação em português contribuem para a preservação e fortalecimento da identidade cultural e linguística, promovendo o uso e a adoção do idioma em contextos tecnológicos;
@@ -42,9 +34,9 @@ Para responder essa pergunta, a própria Design Líquido que assim podemos ter m
 
 <h2 align="center"><strong>Delégua</strong></h2>
 
-Uma linguagem com sintaxe totalmente em potuguês, pensada para tornar a programação mais próxima, inclusiva e acessível para quem fala a nossa língua.
+Uma linguagem com sintaxe totalmente em português, pensada para tornar a programação mais próxima, inclusiva e acessível para quem fala a nossa língua.
 
-E vai muito além do educacional: com a Delégua e o ecossistema da Design Líquido, você pode construir projetos reais e profissionais 100% em português!
+E vai muito além do educacional: com Delégua e o ecossistema da Design Líquido, você pode construir projetos reais e profissionais 100% em português!
 
 Seu núcleo está [disponível no GitHub](https://github.com/DesignLiquido/delegua), onde você pode encontrar sua documentação completa e como utilizá-la.
 
@@ -108,17 +100,21 @@ E, adivinha? Sim, mais um projeto totalmente [disponível no GitHub](https://git
 
 ***
 
-Além de tudo isso, alinhada aos valores da Cumbuca Dev, a Design Líquido é defensora do código aberto, então, todo esse ecossistema tem sido desenvolvido **pela comunidade e para a comunidade**!&#x20;
+Lembrando que esse ecossistema é de código aberto! E você também pode participar do desenvolvimento!&#x20;
 
-Portanto, queremos convidar você a conhecer e usufruir desses mecanismos que só trazem benefícios e proporcionam autonomia para os falantes da língua portuguesa, tornando mais acessível o ensino e aderência das pessoas na programação.
+Contribuir com projetos Open Source pode ser uma ótima porta de entrada para uma pessoa iniciante construir experiência, aprender junto à comunidade de código aberto e aumentar network. E, para além da experiência, participar do desenvolvimento de projetos assim tem um gostinho especial de estar construindo algo real e útil que pessoas que nem imaginamos podem se beneficiar!
 
-E, mais que do que apenas utilizar, também te convidamos a participar e contribuir com seu desenvolvimento! Só assim vamos conseguir construir juntos ferramentas que correspondam à nossa realidade e demandas.
+A Design Líquido e a Cumbuca Dev acreditam e praticam o código aberto como filosofia de trabalho. Todo esse ecossistema é feito **pela comunidade e para a comunidade**!
+
+Por isso, queremo te convidar a explorar, usar, construir e contribuir com estes projetos! Eles existem para beneficiar nós, falantes da língua portuguesa, tornando mais acessível o ensino e a prática da programácão.
+
+Só assim vamos conseguir construir, juntos, ferramentas que correspondam à nossa realidade e demandas!
 
 **E, só para dar aquela reforçadinha**: você pode encontrar todos estes projetos no [GitHub da Design Líquido](https://github.com/DesignLiquido) com toda a documentação de como utilizar e como contribuir, além do [canal no YouTube](https://www.youtube.com/@designliquido) que contém uma série de vídeos demonstrativos explicando a estrutura desses projetos.
 
 ***
 
-Por fim, marque uma estrelinha nos repositórios para ajudar na divulgação, assim mais pessoas  podem ter acesso a esse material e encontrar uma porta de entrada na TI.&#x20;
+Se você gostou dos repositórios e também acredita que o inglês pode ser uma barreira: dê uma estrela nos repositórios do GitHub - assim mais pessoas podem ter acesso a esse material e, quem sabe, encontrar uma porta de entrada na TI.
 
 **OBS.: acho que essa estrelha tbm ficaria bacana à esquerda com o texto a sua direita**
 
