@@ -14,6 +14,6 @@
 * [💜 Novembro 2025](posts/novembro-2025/README.md)
   * [Tutorial de Pituguês - Vem com a gente programar em Português!](posts/novembro-2025/tutorial-de-pitugues-vem-com-a-gente-programar-em-portugues.md)
 * [💜 Dezembro 2025](posts/dezembro-2025/README.md)
-  * [E como é programado o Pituguês?](posts/dezembro-2025/e-como-e-programado-o-pitugues.md)
+  * [Como é programado o Pituguês?](posts/dezembro-2025/como-e-programado-o-pitugues.md)
 * [💜 Copy of \[Mês\] \[ano\]](posts/copy-of-mes-ano/README.md)
   * [Novo Blog Post](posts/copy-of-mes-ano/novo-blog-post.md)

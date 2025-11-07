@@ -24,14 +24,14 @@ Algumas linguagens exigem que o tipo de dado seja declarado como, por exemplo, e
 
 ```
 int numero = 2025;
-String nome = "Pituguês";
+String nome = "Java";
 ```
 
 Note que, em Java, indicamos o tipo do dado (int, para números inteiro, e String para tipos textuais), escrevemos o nome da variável e, por fim, damos um valor a ela. Se formos comparar com Python, já possui uma diferença acentuada...
 
 ```
 numero = 2025
-nome = "Pitugues"
+nome = "Python"
 ```
 
 Como podem ver, já não é necessário indicar o tipo da variável, pois a linguagem irá verificar isso automaticamente, é o que chamamos de "inferir tipo".
@@ -40,7 +40,7 @@ No Pituguês, não vai ser diferente, a nossa declaração de variáveis também
 
 ```
 var numero = 3
-var nome = "Pitugues"
+var nome = "Pituguês"
 ```
 
 #### Indentação
