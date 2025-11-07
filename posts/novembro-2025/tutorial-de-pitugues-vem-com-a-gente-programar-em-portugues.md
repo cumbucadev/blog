@@ -39,7 +39,7 @@ Como podem ver, já não é necessário indicar o tipo da variável, pois a ling
 No Pituguês, não vai ser diferente, a nossa declaração de variáveis também vai inferir o tipo, mas com alguma pequena diferença na sintaxe...
 
 ```
-var numero = 3
+var numero = 2025
 var nome = "Pituguês"
 ```
 
