@@ -47,7 +47,7 @@ senao:
     imprima('Maioridade')
 ```
 
-Você pode notar que, sim, são linguagens bastante semelhantes, mas a principal diferença é que Pituguês vai utilizar a indentação para determinar os blocos de código, enquanto Delégua usa as chaves. Ou que Delégue exige a palavra-reservada "var" para declarar uma variável, ao passo que Pituguês a dispensa. Nesse exemplo, também podemos notar que a palavra-reservada para retornar um valor textual é diferente: Pituguês vai usar "imprima" e Delégua, "escreva".
+Você pode notar que, sim, são linguagens bastante semelhantes, mas a principal diferença é que Pituguês vai utilizar a indentação para determinar os blocos de código, enquanto Delégua usa as chaves. Ou que Delégua exige a palavra-reservada "var" para declarar uma variável, ao passo que Pituguês a dispensa. Nesse exemplo, também podemos notar que a palavra-reservada para retornar um valor textual é diferente: Pituguês vai usar "imprima" e Delégua, "escreva".
 
 ### Onde fica o código-fonte de Pituguês e como ele é organizado?
 
@@ -108,7 +108,7 @@ nome_da_linguagem = "Pituguês"
 O Lexador vai percorrer cada caractere existente nesta linha de código e mapear cada elemento e sua devida função no código, então, teremos:
 
 * "nome\_da\_linguagem": será reconhecido como o "identificador", o nome da variável;
-* "=":  a maioria das pessoas nomeia este símbolo como "sinal de igual", mas no contexto da declaração de variável, o Lexadar deverá identifica-lo como um "sinal de atribuição", pois após ele deverá ser escrito o valor que aquela variável conterá;
+* "=":  a maioria das pessoas nomeia este símbolo como "sinal de igual", mas no contexto da declaração de variável, o Lexador deverá identifica-lo como um "sinal de atribuição", pois após ele deverá ser escrito o valor que aquela variável conterá;
 * "Pituguês": finalmente temos o valor que será guardado pela variável e, neste caso, como o Pituguês é capaz de identificar o tipo de dado por si mesmo, a própria linguagem deverá presumir que se trata de um tipo textual.
 
 Ou seja, para o Pituguês aceitar a declaração de uma variável, o Lexador deve conseguir mapear cada um destes elementos, caso contrário, por ser uma linguagem interpretada, o programa irá interromper sua execução abruptamente, enquanto está em processo de execução. Esta mesma lógica é empregada para todas as outras palavras reservadas e símbolos que compõem a linguagem.&#x20;
