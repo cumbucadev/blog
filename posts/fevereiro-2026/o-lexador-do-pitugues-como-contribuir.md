@@ -1,4 +1,4 @@
-# O Lexador do Pituguês
+# O Lexador do Pituguês - Como Contribuir?
 
 No nosso post anterior sobre como programar o Pituguês, aprendemos que ela é uma linguagem interpretada e que sua arquitetura de projeto é composta por três camadas: o Lexador, o Avaliador Sintático e o Interpretador. Cada uma delas possui sua responsabilidade para que possamos desenvolver uma linguagem de programação e executá-la e, agora, vamos começar a desbravar um pouquinho de cada uma delas, começando por este artigo em que falaremos do Lexador e mostrar um pouquinho como podemos contribuir com o seu código.
 
@@ -6,9 +6,9 @@ Mas, primeiramente...
 
 ## O que é um Lexador?
 
-Nada mais é do que um programa que irá percorrer e escanear, da esquerda para a direita, os caracteres da nossa linguagem. Nesta etapa, serão identificados os lexemas e seu tokens, seu devido significado naquela instrução. Dentro do código-fonte de Pituguês, eles serão chamados, respectivamente, de símbolos e tipos de símbolos.
+Nada mais é do que um programa que irá percorrer e escanear, da esquerda para a direita, os caracteres da nossa linguagem. Nesta etapa, serão identificados os lexemas (que também podemos chamar de símbolos ou tokens) e seu tipo, seu devido significado naquela instrução.
 
-Nós teremos diferentes categorias de símbolos (tokens)...
+Existem diferentes categorias de símbolos...
 
 ### Palavras-reservadas
 
@@ -29,7 +29,7 @@ função somar(valor1, valor2):
     retorna valor1 + valor2 
 ```
 
-Vamos ter a palavra-reservada função para declaração de `função` e, em seguida, o identificador `somar`. É assim que o Lexador irá reconher o nome da função e categoriza-lo para que seja reconhecido dentro da linguagem.
+Vamos ter a palavra-reservada `função` para declaração de funções e, em seguida, o identificador `somar`. É assim que o Lexador irá reconher o nome da função e categoriza-lo para que seja reconhecido dentro da linguagem.
 
 ### Constantes
 
@@ -43,7 +43,7 @@ No entanto, assim como no Python, o Lexador de Pituguês não reconhece ou permi
 
 Esta convenção fará com que outras pessoas que tiverem contato com o código entendam que aquele dado não deve ser alterado.
 
-Mesmo que não o Lexador do Pituguês não seja capaz de reconhecer constantes, achamos que é importante trazer para nossos leitores que elas ainda são uma forma de se identificar e categorizar dados e que, para que seu reconhecimento seja possível, deve ser incluído na programação de um Lexador (afinal, vai que um dia você queira desenvolver uma linguagem que use constantes...).
+Mesmo que o Lexador do Pituguês não seja capaz de reconhecer constantes, achamos que é importante trazer para nossos leitores que elas ainda são uma forma de se identificar e categorizar dados e que, para que seu reconhecimento seja possível, deve ser incluído na programação de um Lexador (afinal, vai que um dia você mesmo queira desenvolver uma linguagem que use constantes...).
 
 ### Operadores
 
@@ -55,7 +55,7 @@ Outra categoria que um Lexador deve ser capaz de mapear são os operadores. Dent
 
 ### Símbolos Especiais
 
-Geralmente são os símbolos usados na estruturação do programa, por exemplo, quando uma linguagem requer que sua instrução seja terminada em ponto e vírgula, ou que a declaração de vetores rexige que seus dados devem estar escrito entre colchetes. Nessas situações, o ponto e vírgula e os colchetes seriam os "símbolos especiais" que fazem parte da estrutura da linguagem para a escrita de instruções.
+Geralmente são os símbolos usados na estruturação do programa, por exemplo, quando uma linguagem requer que sua instrução seja terminada em ponto e vírgula, ou que a declaração de vetores exige que seus dados devem estar escrito entre colchetes. Nessas situações, o ponto e vírgula e os colchetes seriam os "símbolos especiais" que fazem parte da estrutura da linguagem para a escrita de comandos.
 
 ### Lexemas
 
@@ -91,7 +91,7 @@ simbolos: [
  ]
 ```
 
-Note o Lexador nos retorna uma lista de símbolos, em formato json, e cada símbolo é mapeado de acordo com seu tipo e seu lexema. O lexema é a declaração literal da escrita da instrução!&#x20;
+Note o Lexador nos retorna uma lista de símbolos, em formato json, e cada símbolo é mapeado de acordo com seu tipo e seu lexema. Aqui, o lexema é a declaração literal da escrita da instrução!&#x20;
 
 Esta etapa é bastante importante para que se tenha a base inicial ao programar uma linguagem de programação, pois a partir da identificação desses lexemas e tipos é que poderemos criar as regras de execução de cada símbolo, baseados na sua função. E isto acontecerá na etapa do Avaliador Sintático.&#x20;
 
@@ -103,7 +103,7 @@ Além disso, temos outro repositório em que [disponibilizamos um documento](htt
 
 #### Um pequeno adendo...
 
-Aderir a boas práticas, registrando no GitHub seu processo de contribuição é de suma importância! No guia de contribuição que trouxemos para vocês, é ensinado a como buscar por issues para contribuir - ou abrir as próprias issues - e como fazer um PR (Pull Request). Parte da função dessas etapas é deixar documentado e acessível para que outros contribuidores possam acompanhar o desenvolvimento da linguagem...
+Aderir a boas práticas, registrando no GitHub seu processo de contribuição é de suma importância! No guia de contribuição que trouxemos para vocês, é ensinado a como buscar por issues para contribuir - ou abrir as próprias issues - e como fazer um PR (Pull Request). Parte da função dessas etapas é deixar documentado e acessível para que outros contribuidores possam acompanhar o desenvolvimento da linguagem.
 
 Aliás, não apenas para que outras pessoas consigam acompanhar o desenrolar do projeto, mas também é uma forma de mostrar para o mundo o seu trabalho! Aqui na Cumbuca Dev, a gente promove e incentiva a contribuição em projetos de Código Aberto, por ser uma das formas de pessoas iniciantes aprenderem e se desenvolverem na programação, enquanto conquistam experiência real que será super válida para o mercado de trabalho!&#x20;
 
@@ -117,7 +117,7 @@ Mantendo o foco no Lexador, queremos trazer um exemplo de contribuição que foi
 
 #### No início...
 
-Como Pituguês é um dialeto, muitas estruturas e características acabavam sendo herdadas de Delégua, parecia até uma cópia. O que podemos dizer que "não era considerado muito Pythônico", uma vez que a proposta do Pituguês é ser um equivalente a Python, enquanto Delégua se aproxima de TypeScript.
+Como Pituguês é um dialeto, muitas estruturas e características acabavam sendo herdadas de Delégua, parecia até uma cópia. O que podemos dizer que "não era considerado muito Pythônico", uma vez que a proposta do Pituguês é ser um equivalente a Python, enquanto Delégua tem como principais influências Ruby, C# e Kotlin.
 
 Conforme fui estudando mais o dialeto e seu código, identifiquei que o Pituguês usava a mesma função que Delégua: `escreva`. Então, na época, como Pessoa Iniciante Contribuidora, isto me deixou um pouco inquieta, pois se queremos aproximar o Pituguês do Python, poderíamos buscar traduções equivalentes em casos como este.&#x20;
 
@@ -139,9 +139,11 @@ Dentro deste arquivo, você vai encontrar uma função chamada `mapear`. Imagine
 imprima("Você está aprendendo sobre o Lexador do Pituguês!")
 ```
 
-Quando você escreve uma instrução como esta em um VS Code, por exemplo, deve lembrar que escrevemos apenas texto num editor de código e que esse texto precisa ser traduzido para a linguagem de máquina, como comentamos neste artigo.&#x20;
+Quando você escreve uma instrução como esta em um editor de código como o VS Code, por exemplo, deve lembrar que escrevemos apenas texto no editor e que esse texto precisa ser traduzido para a linguagem de máquina, como comentamos [neste artigo](https://cumbuca.dev/2026/01/16/como-e-programado-o-pitugues/).&#x20;
 
-Nesse contexto, a função `mapear` serve para percorrer todas linhas de código escritas no editor, identificando quando aquele comando é iniciado e quando deve terminar. Assim como também verifica a partir de que momento está o início e o final do código por inteiro.&#x20;
+Nesse contexto, o Lexador é quem fará a primeira etapa de reconhecimento do que há escrito no código, identificando e retornando os tokens ali presentes, com seus respectivos tipos. Basicamente, neste primeiro momento, precisamos apenas identificar os lexemas que compõe a nossa instrução.
+
+Dentro do Lexador do Pituguês, temos a função `mapear` para percorrer todas linhas de código escritas no editor, identificando quando aquele comando é iniciado é encerrado. Assim como também verifica a partir de que momento está o início e o final do código por inteiro.&#x20;
 
 Mas ainda não é aqui que vamos adicionar a palavra-reservada `imprima`!
 
@@ -154,13 +156,13 @@ while (!this.eFinalDoCodigo()) {
 }
 ```
 
-Basicamente, esta instrução está dizendo que "enquanto não for o fim do código, cada token deverá ser analisado". E é aí aqui que vamos fazer com que o nosso comando `imprima` seja reconhecido! Através da função `analisarToken` no Lexador!
+Em resumo, esta instrução está dizendo que "enquanto não for o fim do código, cada token deverá ser analisado". E é aí aqui que vamos fazer com que o nosso comando `imprima` seja reconhecido! Através da função `analisarToken` no Lexador!
 
-Esta função vai capturar carartere por caractere da nossa linha de código e vai buscar identificar cada um deles em um longo `switch case`. Pode reparar que vamos ter diversos `cases` para caracteres diferentes (tabulação, espaçamento, nova linha, ponto e vírgula etc). Caracteres correspondentes às categorias que vimos anteriormente no artigo (palavra-reservadas, identificadores, operadores e símbolos especiais). Ou seja, a partir de um momento que o nosso `analisarToken` consegue identificar um desses caracteres, ele vai verificar se há um tipo de símbolo correspondente  ao caractere.
+Esta função vai capturar caractere por caractere da nossa linha de código e vai buscar identificar cada um deles em um longo `switch case`. Pode reparar que vamos ter diversos `cases` para caracteres diferentes (tabulação, espaçamento, nova linha, ponto e vírgula etc). Caracteres correspondentes às categorias que vimos anteriormente no artigo (palavra-reservadas, identificadores, operadores e símbolos especiais). Ou seja, a partir de um momento que o nosso `analisarToken` consegue identificar um desses caracteres, ele vai verificar se há um tipo de símbolo correspondente  ao caractere.
 
 Mas como vamos conseguir identificar a palavra `imprima` como palavra-reservada dentro deste `switch case`?
 
-Ainda dentro do `analisarToken`, temos:
+Ainda dentro do `analisarToken`, no final do `switch case`, temos:
 
 ```
 default:
@@ -257,6 +259,6 @@ Lembrando que também temos [este guia](https://github.com/DesignLiquido/pitugue
 
 ### E agora?
 
-Bom, agora que você já sabe como funciona e como se programa um Lexador, te convidamos a aprender e testar o Pituguês! 😉​ Escrevemos [este tutorial](https://cumbuca.dev/2025/11/07/vem-com-a-gente-programar-em-portugues/) para te ensinar a como programar com ele! Além disso, você pode sempre consultar a [documentação](https://github.com/DesignLiquido/pitugues-docs/wiki)!
+Bom, agora que você já sabe como funciona e como se programa um Lexador, te convidamos a aprender e testar o Pituguês! 😉​ Escrevemos [este tutorial](https://cumbuca.dev/2025/11/07/vem-com-a-gente-programar-em-portugues/) para te ensinar a como programar com ele! Além disso, você sempre pode consultar a [documentação](https://github.com/DesignLiquido/pitugues-docs/wiki)!
 
 [Neste repositório](https://github.com/cumbucadev/desafios-pitugues/issues) temos descrito alguns desafios para fazer em Pituguês! E se, por caso, tiver qualquer dificuldade com a linguagem, já pode reportar pra gente que te ajudamos!

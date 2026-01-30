@@ -16,7 +16,7 @@
 * [💜 Janeiro 2026](posts/janeiro-2026/README.md)
   * [Como é programado o Pituguês?](posts/janeiro-2026/como-e-programado-o-pitugues.md)
 * [💜 Fevereiro 2026](posts/fevereiro-2026/README.md)
-  * [O Lexador do Pituguês](posts/fevereiro-2026/o-lexador-do-pitugues.md)
+  * [O Lexador do Pituguês - Como Contribuir?](posts/fevereiro-2026/o-lexador-do-pitugues-como-contribuir.md)
 * [💜 Março 2026](posts/marco-2026/README.md)
   * [Avaliador Sintático](posts/marco-2026/avaliador-sintatico.md)
 * [💜 \[Mês\] \[ano\]](posts/mes-ano/README.md)
