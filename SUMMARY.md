@@ -18,6 +18,6 @@
 * [💜 Fevereiro 2026](posts/fevereiro-2026/README.md)
   * [O Lexador do Pituguês - Como Contribuir?](posts/fevereiro-2026/o-lexador-do-pitugues-como-contribuir.md)
 * [💜 Março 2026](posts/marco-2026/README.md)
-  * [Avaliador Sintático](posts/marco-2026/avaliador-sintatico.md)
+  * [Pituguês - Do que precisamos para desenvolver a AST de uma linguagem de programação?](posts/marco-2026/pitugues-do-que-precisamos-para-desenvolver-a-ast-de-uma-linguagem-de-programacao.md)
 * [💜 \[Mês\] \[ano\]](posts/mes-ano/README.md)
   * [Novo Blog Post](posts/mes-ano/novo-blog-post.md)
