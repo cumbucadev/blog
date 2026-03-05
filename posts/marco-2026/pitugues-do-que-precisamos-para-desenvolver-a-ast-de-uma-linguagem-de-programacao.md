@@ -80,7 +80,7 @@ A nossa linha de código vai sofrer um processo parecido de identificação quan
 nome_da_linguagem = "Pituguês"
 ```
 
-Quando o Avaliador receber esta linha de código, terá sido mapeado que ali temos um identificador, um sinal de atribuição de valor e, por último, temos o valor, dado de tipo textual. Após receber esta sequência de caracteres com seus significado, será analisado se aquela linha de código está na ordem correta para que seja considerada uma declaração variável. Isto será processado dentro desta função (você pode encontrá-la [aqui](https://github.com/DesignLiquido/delegua/blob/principal/fontes/avaliador-sintatico/dialetos/avaliador-sintatico-pitugues.ts)):
+Quando o Avaliador recebe esta linha de código, terá sido mapeado que ali temos um identificador, um sinal de atribuição de valor e, por último, temos o valor, um dado de tipo textual. Após receber esta sequência de caracteres com seus significado, será analisado se aquela linha de código está na ordem correta para que seja considerada uma declaração variável. Isto será processado dentro desta função (você pode encontrá-la [aqui](https://github.com/DesignLiquido/delegua/blob/principal/fontes/avaliador-sintatico/dialetos/avaliador-sintatico-pitugues.ts)):
 
 ```
 private async declaracaoImplicitaVariaveis(): Promise<Var> {
@@ -110,7 +110,7 @@ private async declaracaoImplicitaVariaveis(): Promise<Var> {
 }
 ```
 
-Nesta função em código TypeScript, cuja assinatura espera que seja construído um objeto do tipo `Var` após o avaliador receber aquela linha de código. Só que está variável só será construída após passar pelas validações na função acima:
+Nesta função, em código TypeScript, sua assinatura espera que seja construído um objeto do tipo `Var`, para criarmos uma variável, após o avaliador receber aquela linha de código. Só que esta variável só será construída após passar pelas validações na função acima:
 
 * `const identificador`: irá armazenar o identificador a nossa variável;
 * É validado se existe o sinal de igual para atribuição de valor;
@@ -132,7 +132,7 @@ Mas, antes, vamos entender o que é uma...
 
 #### Estrutura de Dados em Árvore
 
-Quando nos referimos ao tema de estrutura de dados, lidamos com formas de armazenamento de dados que são lineares por terem um início e um fim, como vetores, pilhas e filas. A árvore também é uma estrutura de dados, porém, ela não opera de forma linear como as outras mencionadas, mas de maneira hierárquica.
+Quando nos referimos ao tema de estrutura de dados, lidamos com formas de armazenamento de dados que são lineares por terem um início e um fim, como vetores, pilhas e filas. A árvore também é uma estrutura de dados, porém, ela não opera de forma linear como as outras mencionadas, mas de maneira hierárquica e permite um crescimento contínuo de dados.
 
 Imagine que você elaborou uma lista de filmes que quer baixar para assistir mais tarde. Pensando em estrutura de dados, você pode guardar essa lista num vetor, como, por exemplo:
 
@@ -152,7 +152,7 @@ lista_de_filmes = [
 
 Em um vetor, conseguimos ter essa visão mais panorâmica do que há na nossa lista e selecionar um item pela sua posição dentro do vetor, simplesmente por percorrer a estrutura com um laço de repetição, por exemplo. E até aqui tudo bem, porque a intenção era apenas de ter uma listagem dos filmes que se pretendia assistir.
 
-Você já baixou os filmes e criou uma pasta chamada `FILMES` no seu computador para deixar eles guardadinhos ali dentro, mas isso te deixou incomodado porque só colocar os arquivos ali dentro não ficou exatamente organizado. Então, que tal organizar os filmes de acordo com seu país de lançamento?&#x20;
+Agora, você já baixou os filmes e criou uma pasta chamada `FILMES` no seu computador para deixar eles guardadinhos ali dentro, mas isso te deixou incomodado porque só colocar os arquivos ali não ficou exatamente organizado. Então, que tal organizar os filmes de acordo com seu país de lançamento?&#x20;
 
 Podemos ter uma organização em que iremos aninhar os filmes de acordo com seu país e ela ficaria mais ou mesmo assim...
 
@@ -181,7 +181,7 @@ Agora, se quiser assistir o filme "Cidade de Deus", vai precisar navegar pelo ca
 * Depois o diretório `Brasil`
 * E, por fim, o filme "`Cidade de Deus`"&#x20;
 
-Ou seja, a partir do momento que eu quero ter acesso aos filmes que estão na pasta `Brasil`, eu já não tenho acesso visível aos que estão dentro dos filmes que estão aninhanados em outros países. Então, se eu estiver ainda dentro de Brasil, caso eu mude de ideia e queira assistir um filme da Argentina, eu vou precisar retroceder um diretório para poder entrar em outro, isto porque cada um do filmes está organizado na pasta do seu respectivo país.&#x20;
+Ou seja, a partir do momento que eu quero ter acesso aos filmes que estão na pasta `Brasil`, eu já não tenho acesso visível aos filmes que estão aninhanados em outros países. Então, se eu estiver ainda dentro de Brasil, caso eu mude de ideia e queira assistir um filme da Argentina, eu vou precisar retroceder um diretório para poder entrar em outro, isto porque cada um do filmes está organizado na pasta do seu respectivo país.&#x20;
 
 É mais ou menos assim que uma estrutura de dados em árvore se comporta. Você só consegue ter acesso àquele dado/informação se estiver "dentro do guarda-chuva dele". É justamente por isso que não haverá linearidade em uma árvore, pois os dados estarão organizados, de novo, hierarquicamente.
 
@@ -392,7 +392,7 @@ Cada funcionalidade empregada na linguagem são chamadas de "construtos" que nad
 
 Para dar um exemplo mais simples, vamos dar continuidade ao método `imprima` que adicionamos ao Lexador na postagem anterior sobre Pituguês...
 
-Após receber do Lexador mapear os tipos de símbolos no trecho de código (imprima,  texto e parenteses esquerdo e direito):
+Após receber do Lexador os tipos de símbolos no trecho de código (imprima,  texto e parenteses esquerdo e direito):
 
 ```
 imprima("Agora, você está aprendendo sobre o Avaliador Sintático do Pituguês!")
@@ -429,7 +429,7 @@ O objetivo principal desta função é que os símbolos trazidos pelo Lexador se
 const retornoDeclaracao = await this.resolverDeclaracaoForaDeBloco();
 ```
 
-É aqui que o código vai começar a análise dos símbolos recebidos para depois instanciarmos o construto referente a declaração que queremos gerar e adicioná-la à nossa lista de declarações.
+É aqui que o código vai começar a análise de cada um dos símbolos recebidos para depois instanciarmos o construto referente a declaração que queremos gerar e adicioná-la à nossa lista de declarações.
 
 #### Função `resolverDeclaracaoForaDeBloco`
 
@@ -450,7 +450,7 @@ case tiposDeSimbolos.ESCREVA:
     return this.declaracaoEscreva(simboloEscrevaOuImprima);
 ```
 
-No nosso artigo sobre o Lexador, ensinamos que quando uma nova palavra-reservada for incluída, também tevemos incluir o seu tipo dentro deste [arquivo](https://github.com/DesignLiquido/delegua/blob/principal/fontes/tipos-de-simbolos/pitugues.ts). É exatamente agora que ele vai ser de suma importância para que o Avaliador Sintático consiga buscar o método que irá verificar se a sintaxe do código foi escrita corretamente e gerar o construto  e declaração em questão para fazer parte da AST.
+No nosso artigo sobre o Lexador, ensinamos que quando uma nova palavra-reservada for incluída, também devemos incluir o seu tipo dentro deste [arquivo](https://github.com/DesignLiquido/delegua/blob/principal/fontes/tipos-de-simbolos/pitugues.ts). É exatamente agora que ele vai ser de suma importância para que o Avaliador Sintático consiga buscar o método que irá verificar se a sintaxe do código foi escrita corretamente e gerar o construto  e declaração em questão para fazer parte da AST.
 
 Antes de irmos adiante no `switch case`, talvez cause uma ligeira dúvida ao leitor de: "por que estamos sendo direcionados para a função `declaracaoEscreva` se estamos tratando da função `imprima`? Por que não uma `declaracaoImprima`?".&#x20;
 
@@ -462,7 +462,7 @@ De qualquer forma, como o nosso `imprima` possui o mesmo comportamento do `escre
 
 #### Função `declaracaoEscreva`
 
-Após ter reconhecido o símbolo `imprima`, entrarmos na função que irá construir a declaração do método e adicioná-la à AST.&#x20;
+Após ter reconhecido o símbolo `imprima`, entramos na função que irá construir a declaração do método para adicioná-la à AST.&#x20;
 
 O que você pode notar é que a função `declaracaoEscreva` recebe como argumento o símbolo gerado pelo Lexador e que chegou do Avaliador Sintático e, agora, vamos entrar na verificação para garantir que a os itens estão na ordem esperada que se possa construir, finalmente, uma declaração para `imprima`:
 
@@ -511,7 +511,7 @@ while (!this.estaNoFinal()) {
 }
 ```
 
-Para gerar a AST, depois fazemos todo aquele trajeto para conseguir transformar nosso símbolo numa declaração a partir da função `resolverDeclaracaoForaDeBloco` e, por fim, enviamos o que foi retornado na variável `retornoDeclaracao` por todo aquele processo de validação e enviamos para nosso array de `declaracoes` com um `push`.
+Para gerar a AST, depois de concluir todo aquele trajeto para conseguir transformar nosso símbolo numa declaração a partir da função `resolverDeclaracaoForaDeBloco` e, por fim, enviamos o que foi retornado na variável `retornoDeclaracao` por todo aquele processo de validação e enviamos para nosso array de `declaracoes` com um `push`.
 
 ## Contribua com o Pituguês!
 
@@ -522,6 +522,8 @@ Como comentamos, o código-fonte do Pituguês mora dentro de Delégua, então vo
 Além disso, também preparamos [este documento](https://github.com/DesignLiquido/pitugues-docs/blob/principal/CONTRIBUTING.md) que **te guia em como contribuir** com a linguagem, em que damos uma visão geral da estrutura do código e os arquivos principais para você contribuir com o Pituguês.
 
 Caso encontre alguma dificuldade, a Design Líquido fez um [vídeo demonstrando como contribuir com um Avaliador Sintático](https://www.youtube.com/watch?v=lxqY48mDjqQ\&t) e você pode pegar inspirações de lá!&#x20;
+
+E se você for uma pessoa um pouquinho mais ansiosa e quer entender todas as etapas de desenvolvimento de uma linguagem de programação, te indicamos esta [playlist no YouTube](https://www.youtube.com/watch?v=92RlDyXy5EE\&list=PL6y10dwsUMhpnsBj_f3Us-JkRDBwEnq8O) da Design Líquido!&#x20;
 
 ### Mas com o que posso contribuir?
 
